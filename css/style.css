@@ -504,8 +504,8 @@ h3.sub-title {
 }
 
 .btn-lg {
-  padding: 18px 40px;
-  font-size: 1.05rem;
+  padding: 15px 24px;
+  font-size: 0.95rem;
   width: 100%;
   max-width: 360px;
 }
@@ -1000,6 +1000,8 @@ h3.sub-title {
 
   .btn-lg {
     width: auto;
+    padding: 18px 40px;
+    font-size: 1.05rem;
   }
 
   .doctor-photo-placeholder {
