@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="旭川市【クリニック名】への初めてのご来院をサポートします。持ち物・受診の流れ・よくある不安を分かりやすくご案内。旭川市 内科 初診。">
+  <link rel="canonical" href="https://【ドメイン名】/first-visit.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="初診の方へ｜【クリニック名】">
+  <meta property="og:description" content="旭川市【クリニック名】への初めてのご来院をサポートします。持ち物チェックリスト・受診の流れ・初診前のよくある疑問をまとめました。">
+  <meta property="og:url" content="https://【ドメイン名】/first-visit.html">
+  <meta property="og:image" content="https://【ドメイン名】/images/ogp.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>初診の方へ｜【クリニック名】｜旭川市の内科・糖尿病内科</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .welcome-box {
+      background: linear-gradient(135deg, #1c5f94 0%, #2b7bb9 100%);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 28px 22px;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .welcome-box h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .welcome-box p {
+      font-size: 0.9rem;
+      opacity: 0.92;
+      line-height: 1.8;
+    }
+
+    .checklist-box {
+      background: var(--color-bg);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      border: 1px solid var(--color-border);
+      margin: 20px 0;
+    }
+    .checklist-box h3 {
+      font-size: 1rem;
+      color: var(--color-primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .must-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.9rem;
+    }
+    .must-item:last-child { border-bottom: none; }
+    .must-badge {
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 50px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .must-badge.optional {
+      background: var(--color-text-sub);
+    }
+
+    .ok-list {
+      list-style: none;
+      padding: 0;
+    }
+    .ok-list li {
+      padding: 12px 0 12px 32px;
+      position: relative;
+      font-size: 0.9rem;
+      border-bottom: 1px dashed var(--color-border);
+      line-height: 1.6;
+    }
+    .ok-list li:last-child { border-bottom: none; }
+    .ok-list li::before {
+      content: '😊';
+      position: absolute;
+      left: 0;
+    }
+
+    .qa-inline {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin: 12px 0;
+    }
+    .qa-inline .q {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 6px;
+    }
+    .qa-inline .a {
+      font-size: 0.875rem;
+      line-height: 1.75;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-logo">
+      <a href="index.html" style="color:inherit; text-decoration:none;">
+        【クリニック名】
+        <span>内科・糖尿病内科</span>
+      </a>
+    </div>
+    <div class="header-right">
+      <div class="header-tel">
+        <a href="tel:【電話番号】">【電話番号】</a>
+        <span>受付時間 【診療時間】</span>
+      </div>
+      <a href="【予約URL】" class="btn-reserve-header">ネット予約</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="global-nav" id="globalNav" aria-label="メインナビゲーション">
+    <ul>
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="about.html">医院紹介</a></li>
+      <li><a href="doctor.html">医師紹介</a></li>
+      <li><a href="treatment/index.html">診療内容</a></li>
+      <li><a href="first-visit.html" aria-current="page">初診の方へ</a></li>
+      <li><a href="faq.html">よくある質問</a></li>
+      <li><a href="access.html">アクセス</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>初診の方へ</h1>
+  <p>はじめての方でも安心してご来院いただけます</p>
+</section>
+<div class="breadcrumb">
+  <a href="index.html">トップ</a> ＞ 初診の方へ
+</div>
+
+<main id="main-content">
+  <section class="section">
+    <div class="section-inner">
+
+      <div class="welcome-box">
+        <h2>ようこそ、【クリニック名】へ</h2>
+        <p>
+          「初めて病院に行くのは緊張する」という気持ち、よく分かります。<br>
+          このページでは、はじめてご来院される方が安心して受診できるよう、<br>
+          持ち物・流れ・よくある不安をまとめました。<br><br>
+          遠慮なく、気軽な気持ちでいらしてください。
+        </p>
+      </div>
+
+      <!-- ===== 持ち物 ===== -->
+      <h2 class="lead-title">持ち物チェックリスト</h2>
+      <div class="checklist-box">
+        <h3>🎒 ご持参をお願いするもの</h3>
+        <div class="must-item">
+          <span class="must-badge">必須</span>
+          <div>
+            <strong>健康保険証</strong><br>
+            <span style="font-size:0.82rem; color:var(--color-text-sub);">マイナ保険証でも対応しています。</span>
+          </div>
+        </div>
+        <div class="must-item">
+          <span class="must-badge optional">任意</span>
+          <div>
+            <strong>お薬手帳</strong><br>
+            <span style="font-size:0.82rem; color:var(--color-text-sub);">現在飲んでいるお薬がある場合。薬の名前が分かるメモでも大丈夫です。</span>
+          </div>
+        </div>
+        <div class="must-item">
+          <span class="must-badge optional">任意</span>
+          <div>
+            <strong>健康診断の結果票</strong><br>
+            <span style="font-size:0.82rem; color:var(--color-text-sub);">最近受けた健診の結果があれば、ご持参ください。より詳しく現状を把握できます。</span>
+          </div>
+        </div>
+        <div class="must-item">
+          <span class="must-badge optional">任意</span>
+          <div>
+            <strong>紹介状（あれば）</strong><br>
+            <span style="font-size:0.82rem; color:var(--color-text-sub);">他の病院・クリニックからの紹介状がある場合はお持ちください。</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== 受診の流れ ===== -->
+      <h2 class="lead-title">受診の流れ</h2>
+      <ol class="step-list">
+        <li>
+          <h3>ご予約</h3>
+          <p>ネット予約またはお電話でご予約いただくと、待ち時間を短くできます。予約なしでも受診可能です（待ち時間が生じる場合があります）。</p>
+        </li>
+        <li>
+          <h3>受付</h3>
+          <p>お越しいただいたら、受付スタッフにお声がけください。初診の方には問診票をお渡しします。ゆっくり記入していただいて大丈夫です。</p>
+        </li>
+        <li>
+          <h3>問診票の記入</h3>
+          <p>体調・症状・既往歴（これまでの病気）・現在のお薬などを記入していただきます。「書き方が分からない」「字が書きにくい」という方は、スタッフがお手伝いします。</p>
+        </li>
+        <li>
+          <h3>診察・検査</h3>
+          <p>医師が問診票を確認しながら、丁寧にお話を聞きます。必要に応じて血液検査・尿検査・心電図などを行います。検査内容は事前にご説明します。</p>
+        </li>
+        <li>
+          <h3>検査結果のご説明・お薬の処方</h3>
+          <p>その日に結果が出る検査は、当日にご説明します。後日結果が出る検査は、次回の受診時または電話でお伝えする場合があります。必要に応じてお薬を処方します。</p>
+        </li>
+        <li>
+          <h3>お会計</h3>
+          <p>診療が終わりましたら受付でお会計をお願いします。現金・各種クレジットカード・電子マネーに対応しています（※対応方法は【クリニック名】にてご確認ください）。</p>
+        </li>
+      </ol>
+
+      <!-- 所要時間 -->
+      <div class="highlight-box" style="margin:24px 0;">
+        <h3 class="sub-title" style="margin-top:0;">⏱ 初診の所要時間の目安</h3>
+        <p style="font-size:0.9rem; line-height:1.85;">
+          初診では問診を丁寧に行うため、<strong>受付からお会計まで1〜1.5時間程度</strong>お時間をいただく場合があります。
+          お時間に余裕を持ってお越しいただけると助かります。<br><br>
+          混雑状況によっては前後することがあります。あらかじめご了承ください。
+        </p>
+      </div>
+
+      <!-- こんな方も大丈夫 -->
+      <h2 class="lead-title">こんな方も、安心してご来院ください</h2>
+      <ul class="ok-list">
+        <li>
+          「自覚症状はないけど、健診の数値が気になる」という方<br>
+          <span style="font-size:0.82rem; color:var(--color-text-sub);">→ 自覚症状がなくても、血糖値・血圧などの相談は大歓迎です。</span>
+        </li>
+        <li>
+          「病院に行くのが怖い・緊張する」という方<br>
+          <span style="font-size:0.82rem; color:var(--color-text-sub);">→ 怒ったり、厳しく言ったりしません。ゆっくり話しましょう。</span>
+        </li>
+        <li>
+          「専門用語が多くて話が分からなかった」という経験がある方<br>
+          <span style="font-size:0.82rem; color:var(--color-text-sub);">→ 難しい言葉を使わず、できる限り分かりやすくお伝えします。</span>
+        </li>
+        <li>
+          一人で来るのが不安な方<br>
+          <span style="font-size:0.82rem; color:var(--color-text-sub);">→ ご家族やご友人と一緒にお越しいただけます。</span>
+        </li>
+        <li>
+          車いすや歩行補助具をお使いの方<br>
+          <span style="font-size:0.82rem; color:var(--color-text-sub);">→ バリアフリー対応です。お気軽にいらしてください。</span>
+        </li>
+        <li>
+          「以前に糖尿病と言われたけど、しばらく受診していない」という方<br>
+          <span style="font-size:0.82rem; color:var(--color-text-sub);">→ 「また来てくれた」と思うだけです。ぜひ再開しましょう。</span>
+        </li>
+      </ul>
+
+      <!-- よくある初診前Q&A -->
+      <h2 class="lead-title">初診前のよくある疑問</h2>
+      <div class="qa-inline">
+        <p class="q">Q. 予約なしでも受診できますか？</p>
+        <p class="a">A. はい、受診いただけます。ただし、ご予約の患者さんを優先してご案内するため、お待ちいただく時間が長くなる場合があります。できればネット予約またはお電話でのご予約をお勧めしています。</p>
+      </div>
+      <div class="qa-inline">
+        <p class="q">Q. 保険証を忘れてしまったら？</p>
+        <p class="a">A. 受診は可能ですが、その日は一時的に10割負担となり、後日保険証をお持ちいただいた際に差額をお返しします。事前にご連絡いただけるとスムーズです。</p>
+      </div>
+      <div class="qa-inline">
+        <p class="q">Q. 子どもを連れて行っても大丈夫ですか？</p>
+        <p class="a">A. もちろんです。ベビーカーでのご来院も歓迎です。お子さんへの内科的な診察は対応外となりますが、保護者の方の受診に同席いただくことは可能です。</p>
+      </div>
+      <div class="qa-inline">
+        <p class="q">Q. 当日どんな検査をしますか？</p>
+        <p class="a">A. 受診目的によって異なりますが、初診では問診・血液検査・尿検査・血圧測定などが基本です。検査の内容は医師が事前にご説明してから行います。</p>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-block">
+        <p>ご準備はできましたか？<br>一緒に体のことを考えましょう。</p>
+        <div class="btn-group">
+          <a href="【予約URL】" class="btn btn-accent btn-lg">📅 ネットで予約する</a>
+          <a href="tel:【電話番号】" class="btn btn-primary btn-lg">📞 お電話で予約する</a>
+        </div>
+        <p style="font-size:0.8rem; margin-top:12px; color:var(--color-text-sub);">
+          ご不明な点は、お電話でお気軽にご相談ください。
+        </p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">【クリニック名】</div>
+    <div class="footer-info">
+      〒【所在地（旭川市〇〇）】<br>
+      TEL：<a href="tel:【電話番号】" style="color:#9bc;">【電話番号】</a><br>
+      診療時間：【診療時間】
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">トップ</a>
+      <a href="about.html">医院紹介</a>
+      <a href="doctor.html">医師紹介</a>
+      <a href="treatment/index.html">診療内容</a>
+      <a href="first-visit.html">初診の方へ</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="access.html">アクセス</a>
+    </nav>
+    <p class="footer-copy">© 【クリニック名】 All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="fixed-cta-bar" role="navigation" aria-label="予約ナビゲーション">
+  <a href="tel:【電話番号】" class="cta-tel">📞 電話で予約</a>
+  <a href="【予約URL】" class="cta-web">🗓 ネット予約</a>
+</div>
+
+<script>
+  function toggleNav() {
+    const nav     = document.getElementById('globalNav');
+    const overlay = document.getElementById('navOverlay');
+    const btn     = document.getElementById('navToggle');
+    const isOpen  = nav.classList.toggle('is-open');
+    overlay.classList.toggle('is-open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    btn.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+  }
+  function closeNav() {
+    const nav     = document.getElementById('globalNav');
+    const overlay = document.getElementById('navOverlay');
+    const btn     = document.getElementById('navToggle');
+    nav.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'メニューを開く');
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeNav();
+  });
+</script>
+
+<!--
+===========================================
+【初診の方へ】後から差し替えるべきポイント
+===========================================
+1. マイナ保険証の対応 → 実際の対応状況に変更（対応/未対応）
+2. 所要時間「1〜1.5時間」→ 実際の目安に変更
+3. お会計の支払い方法（クレジット・電子マネー）→ 実際の対応に変更
+4. 「後日結果が出る検査」の説明方法 → 実際のフローに合わせて変更
+5. 「予約なしでも受診可能」→ 実際の運用に合わせて変更
+6. バリアフリー設備 → 実際の設備に合わせて変更
+7. 子ども連れについての案内 → 実際の方針に変更
+8. 初診Q&A各項目 → 実際によく聞かれることに更新
+===========================================
+-->
+</body>
+</html>

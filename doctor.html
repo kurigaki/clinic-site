@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="旭川市【クリニック名】の院長【医師名】のご紹介。女性医師ならではの安心感と患者さん一人ひとりに寄り添う診療スタイル。旭川市内科 女性医師。">
+  <link rel="canonical" href="https://【ドメイン名】/doctor.html">
+
+  <!-- OGP 🔴 NEW -->
+  <meta property="og:type"        content="profile">
+  <meta property="og:title"       content="医師紹介｜【クリニック名】｜旭川市の内科（女性医師）">
+  <meta property="og:description" content="女性医師・【医師名】先生のストーリーをご紹介。なぜ医師を目指したのか、患者さんへの向き合い方について。">
+  <meta property="og:url"         content="https://【ドメイン名】/doctor.html">
+  <meta property="og:image"       content="https://【ドメイン名】/images/doctor-ogp.jpg">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <title>医師紹介｜【クリニック名】｜旭川市の内科・糖尿病内科（女性医師）</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 医師の構造化データ 🔴 NEW -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "【医師名】",
+    "description": "旭川市の内科・糖尿病内科医。女性医師として患者さん一人ひとりに寄り添う診療を行っています。",
+    "gender": "Female",
+    "medicalSpecialty": ["InternalMedicine", "Endocrinology"],
+    "worksFor": {
+      "@type": "MedicalClinic",
+      "name": "【クリニック名】",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "旭川市",
+        "addressRegion": "北海道",
+        "addressCountry": "JP"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    .doctor-profile-wrap {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--color-border);
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .doctor-profile-header {
+      background: linear-gradient(135deg, #1c5f94 0%, #2b7bb9 100%);
+      padding: 32px 24px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+    .doctor-profile-photo {
+      width: 140px;
+      height: 175px;
+      background: rgba(255,255,255,0.15);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      border: 2px dashed rgba(255,255,255,0.5);
+      color: rgba(255,255,255,0.85);
+      flex-shrink: 0;
+    }
+    /* 実際の写真用スタイル（差し替え後に適用） */
+    .doctor-profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+    }
+    .doctor-profile-title {
+      font-size: 0.82rem;
+      opacity: 0.82;
+      margin-bottom: 4px;
+    }
+    .doctor-profile-name {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .doctor-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      margin: 2px 4px;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .doctor-profile-body {
+      padding: 28px 20px;
+    }
+    .profile-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin-top: 12px;
+    }
+    .profile-table th {
+      width: 110px;
+      background: var(--color-bg);
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 700;
+      color: var(--color-primary);
+      border: 1px solid var(--color-border);
+      vertical-align: top;
+      font-size: 0.82rem;
+    }
+    .profile-table td {
+      padding: 10px 12px;
+      border: 1px solid var(--color-border);
+      line-height: 1.75;
+      font-size: 0.88rem;
+    }
+
+    /* 先生からのメッセージ */
+    .message-box {
+      background: linear-gradient(135deg, var(--color-primary-light) 0%, #fff 100%);
+      border: 2px solid var(--color-primary);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px 28px;
+      margin: 32px 0;
+      position: relative;
+    }
+    .message-box::before {
+      content: '\201C'; /* " 開き二重引用符 */
+      position: absolute;
+      top: 8px;
+      left: 20px;
+      font-size: 4rem;
+      color: var(--color-primary);
+      opacity: 0.18;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+    .message-box p {
+      font-size: 0.95rem;
+      line-height: 2;
+      color: var(--color-text);
+    }
+    .message-box .signature {
+      text-align: right;
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: var(--color-text-sub);
+      font-weight: 700;
+    }
+
+    /* 安心ポイント */
+    .reassure-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin: 24px 0;
+    }
+    .reassure-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      border: 1px solid var(--color-border);
+      transition: box-shadow var(--transition);
+    }
+    .reassure-item:hover {
+      box-shadow: var(--shadow-hover);
+    }
+    .reassure-item .icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .reassure-item h4 {
+      font-size: 0.92rem;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+    .reassure-item p {
+      font-size: 0.85rem;
+      color: var(--color-text-sub);
+      line-height: 1.65;
+    }
+
+    /* 🔴 NEW: ストーリーの区切りを視覚的に強調 */
+    .story-section {
+      margin: 32px 0;
+    }
+
+    @media (min-width: 768px) {
+      .doctor-profile-header {
+        flex-direction: row;
+        text-align: left;
+      }
+      .reassure-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-logo">
+      <a href="index.html">
+        【クリニック名】
+        <span>内科・糖尿病内科</span>
+      </a>
+    </div>
+    <div class="header-right">
+      <div class="header-tel">
+        <a href="tel:【電話番号】">【電話番号】</a>
+        <span>受付時間 【診療時間】</span>
+      </div>
+      <a href="【予約URL】" class="btn-reserve-header">ネット予約</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="global-nav" id="globalNav" aria-label="メインナビゲーション">
+    <ul>
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="about.html">医院紹介</a></li>
+      <li><a href="doctor.html" aria-current="page">医師紹介</a></li>
+      <li><a href="treatment/index.html">診療内容</a></li>
+      <li><a href="first-visit.html">初診の方へ</a></li>
+      <li><a href="faq.html">よくある質問</a></li>
+      <li><a href="access.html">アクセス</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>医師紹介</h1>
+  <!-- 🔴 IMPROVED: より感情に訴えるサブコピー -->
+  <p>「この先生になら話せる」と感じていただけるよう、先生自身の言葉でお届けします</p>
+</section>
+<div class="breadcrumb">
+  <a href="index.html">トップ</a> ＞ 医師紹介
+</div>
+
+<main id="main-content">
+  <section class="section">
+    <div class="section-inner">
+
+      <!-- プロフィールカード -->
+      <div class="doctor-profile-wrap">
+        <div class="doctor-profile-header">
+          <div class="doctor-profile-photo" aria-label="【医師名】先生の写真（準備中）">
+            【医師<br>写真】
+          </div>
+          <div>
+            <p class="doctor-profile-title">院長 ／ 内科・糖尿病内科</p>
+            <div class="doctor-profile-name">【医師名】</div>
+            <div>
+              <span class="doctor-badge">内科専門医</span>
+              <span class="doctor-badge">糖尿病内科</span>
+              <span class="doctor-badge">生活習慣病</span>
+            </div>
+          </div>
+        </div>
+        <div class="doctor-profile-body">
+          <h2 class="lead-title">略歴・資格</h2>
+          <table class="profile-table">
+            <tbody>
+              <tr>
+                <th scope="row">出身大学</th>
+                <td>【医師経歴：大学名】</td>
+              </tr>
+              <tr>
+                <th scope="row">研修・勤務</th>
+                <td>
+                  【医師経歴：研修病院名・期間】<br>
+                  【医師経歴：勤務先病院・診療科・期間】
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">専門・資格</th>
+                <td>
+                  【医師経歴：取得資格・専門医資格など】<br>
+                  <span style="font-size:0.8rem; color:var(--color-text-sub);">例：日本内科学会認定内科医 / 日本糖尿病学会専門医</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">所属学会</th>
+                <td>【医師経歴：所属学会名】</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ===== 先生のストーリー ===== -->
+      <h2 class="section-title" style="text-align:left;">先生のストーリー</h2>
+      <p style="margin-bottom:24px; font-size:0.92rem; color:var(--color-text-sub); line-height:1.75;">
+        「なぜ医師を目指したのか」「患者さんとどう向き合っているか」——<br>
+        先生自身の言葉でお伝えします。
+      </p>
+
+      <div class="story-section">
+
+        <div class="story-block" data-num="1">
+          <h3>医師を志したきっかけ</h3>
+          <p>
+            幼い頃、身近な家族が病気で長く入院していました。
+            そのとき、担当の先生がいつも穏やかに、怖くない言葉で話してくれたことが
+            今でも忘れられません。「医師ってこんなに人の心を支えられるんだ」——
+            そう思ったのが、このキャリアを選んだ原点です。<br><br>
+            医学部在学中は内科全般を学びましたが、とくに糖尿病・生活習慣病の分野に
+            引き込まれました。「生活そのものにアプローチできる医学」として、
+            患者さんとの長期的な関わりが持てることに魅力を感じたからです。
+          </p>
+        </div>
+
+        <div class="story-block" data-num="2">
+          <h3>大病院勤務で感じたこと——「もっと話せる場所が必要だ」</h3>
+          <p>
+            研修医として、また専門医として、大きな病院での勤務経験を積みました。
+            診断や治療の技術は磨かれましたが、一方でずっと気になっていたことがあります。<br><br>
+            「先生は忙しそうで聞けなかった」「言われた通りにしているけど、なぜかよく分からない」——
+            そんな声を、患者さんから何度も耳にしました。
+            医療は進んでいるのに、患者さんが「自分の病気のことを分かっている」と
+            感じにくい現実がありました。<br><br>
+            もっとゆっくり話せる場所、何でも聞ける雰囲気のクリニックをつくりたい——
+            その思いが、開業へとつながりました。
+          </p>
+        </div>
+
+        <div class="story-block" data-num="3">
+          <h3>女性医師だからこそ、できること</h3>
+          <p>
+            「体のことを相談するのが恥ずかしい」「男の先生には言いにくい」——
+            そういった声は、特に女性の患者さんから多く聞かれます。
+            体重のこと、ホルモンの変化、食事への罪悪感……
+            言葉にするのが難しい悩みを、どうか遠慮なく話してほしいと思っています。<br><br>
+            女性医師として、同じ生活者の目線に近い視点で診療できることが、
+            私の強みのひとつだと感じています。
+            「この先生には言える」と感じてもらえると、本当に嬉しいです。
+          </p>
+        </div>
+
+        <div class="story-block" data-num="4">
+          <h3>旭川市でクリニックを開いた理由</h3>
+          <p>
+            私自身、旭川に縁があり、この土地の人々や暮らしが好きです。
+            冬は寒く、外出が減る。食生活も本州とは異なる。
+            旭川ならではの生活習慣が、体に与える影響も理解しているつもりです。<br><br>
+            地域に根ざした「かかりつけ医」として、何年にもわたって
+            皆さんの健康を支えていきたい。それが、ここに開院した理由です。
+          </p>
+        </div>
+
+      </div>
+
+      <!-- 先生からのメッセージ -->
+      <div class="message-box">
+        <h2 class="lead-title" style="margin-top:0;">患者さんへのメッセージ</h2>
+        <p>
+          「病院に行くほどじゃないかな」と思いながら、
+          ずっと気になっていることはありませんか？<br><br>
+          そういう方にこそ、来ていただきたいんです。
+          早めに相談してくれた方が、私も一緒に考えられることが多い。
+          「来てよかった」と思っていただけるような診療を、
+          これからも続けていきたいと思っています。<br><br>
+          難しい言葉は使いません。怒りません。急かしません。<br>
+          あなたのペースで、一緒に体のことを考えましょう。
+        </p>
+        <p class="signature">
+          【クリニック名】院長　【医師名】
+        </p>
+      </div>
+
+      <!-- こんな方に選ばれています -->
+      <h2 class="section-title" style="margin-top:48px;">こんな方に選ばれています</h2>
+      <div class="reassure-grid">
+        <div class="reassure-item">
+          <div class="icon">👩</div>
+          <div>
+            <h4>女性の患者さん</h4>
+            <p>体型や生理周期、ホルモンバランスなど、女性特有の悩みも気軽に話せます。</p>
+          </div>
+        </div>
+        <div class="reassure-item">
+          <div class="icon">👴</div>
+          <div>
+            <h4>高齢の患者さん</h4>
+            <p>ゆっくり、分かりやすくご説明します。一人でいらしても安心です。</p>
+          </div>
+        </div>
+        <div class="reassure-item">
+          <div class="icon">🏥</div>
+          <div>
+            <h4>病院が怖い・苦手な方</h4>
+            <p>威圧的な雰囲気は一切ありません。話すだけでも大丈夫です。</p>
+          </div>
+        </div>
+        <div class="reassure-item">
+          <div class="icon">📋</div>
+          <div>
+            <h4>健診結果を持って来た方</h4>
+            <p>数値の意味から丁寧に説明します。「どうすればいいか」を一緒に考えます。</p>
+          </div>
+        </div>
+        <div class="reassure-item">
+          <div class="icon">🤰</div>
+          <div>
+            <h4>妊娠中・妊娠を考えている方</h4>
+            <p>妊娠糖尿病・生活習慣病管理など、ライフステージに合わせたサポートを。</p>
+          </div>
+        </div>
+        <div class="reassure-item">
+          <div class="icon">👨‍👩‍👧</div>
+          <div>
+            <h4>家族の受診に付き添う方</h4>
+            <p>「親を連れてきた」という方のご相談も大歓迎です。一緒に聞いていただけます。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-block">
+        <p class="cta-main-text">「この先生なら、相談してみよう」と思っていただけましたか？</p>
+        <p class="cta-sub-text">初診のご予約は、ネットまたはお電話で承っています</p>
+        <div class="btn-group">
+          <a href="【予約URL】" class="btn btn-accent btn-lg pulse">📅 ネットで予約する</a>
+          <a href="tel:【電話番号】" class="btn btn-primary btn-lg">📞 お電話で予約する</a>
+        </div>
+        <p style="font-size:0.8rem; margin-top:14px; color:var(--color-text-sub);">
+          初診の方もお気軽にどうぞ。<a href="first-visit.html">初診の方へ →</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">【クリニック名】</div>
+    <div class="footer-info">
+      〒【所在地（旭川市〇〇）】<br>
+      TEL：<a href="tel:【電話番号】" style="color:#9bc;">【電話番号】</a><br>
+      診療時間：【診療時間】
+    </div>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="index.html">トップ</a>
+      <a href="about.html">医院紹介</a>
+      <a href="doctor.html">医師紹介</a>
+      <a href="treatment/index.html">診療内容</a>
+      <a href="first-visit.html">初診の方へ</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="access.html">アクセス</a>
+    </nav>
+    <p class="footer-copy">© 【クリニック名】 All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="fixed-cta-bar" role="navigation" aria-label="予約ナビゲーション">
+  <a href="tel:【電話番号】" class="cta-tel">📞 電話で予約</a>
+  <a href="【予約URL】" class="cta-web">🗓 ネット予約</a>
+</div>
+
+<script>
+  function toggleNav() {
+    const nav     = document.getElementById('globalNav');
+    const overlay = document.getElementById('navOverlay');
+    const btn     = document.getElementById('navToggle');
+    const isOpen  = nav.classList.toggle('is-open');
+    overlay.classList.toggle('is-open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    btn.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+  }
+  function closeNav() {
+    const nav     = document.getElementById('globalNav');
+    const overlay = document.getElementById('navOverlay');
+    const btn     = document.getElementById('navToggle');
+    nav.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'メニューを開く');
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeNav();
+  });
+</script>
+
+<!--
+===========================================
+【医師紹介ページ】後から差し替えるべきポイント
+===========================================
+1.  【医師名】→ 正式な氏名（掲載合意を取った上で）
+2.  【医師写真】→ 実際のプロフィール写真に差し替え（.doctor-profile-photo内のdivをimgタグに変更）
+3.  資格・略歴テーブル全行 → 実際の経歴に変更
+4.  ドクターバッジ（内科専門医 等）→ 実際の資格名に変更
+5.  ストーリー①〜④ → 先生の実際のエピソードに書き直し（最重要）
+6.  患者さんへのメッセージ全文 → 先生の実際の言葉・表現に変更
+7.  「安心ポイント」の項目 → 実際に診ている患者層に合わせて調整
+8.  OGP画像（doctor-ogp.jpg）→ 先生の写真を使った1200×630px画像
+9.  JSON-LD の医師情報 → 実名・資格に更新
+10. 「ネット予約は24時間受付」など → 実際のシステムに合わせて確認
+===========================================
+-->
+</body>
+</html>

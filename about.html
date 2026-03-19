@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="旭川市の【クリニック名】の医院紹介です。女性医師が丁寧に対応する内科・糖尿病内科クリニック。旭川市内科の情報はこちら。">
+  <link rel="canonical" href="https://【ドメイン名】/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="医院紹介｜【クリニック名】">
+  <meta property="og:description" content="旭川市の【クリニック名】の医院紹介です。女性医師が丁寧に対応する内科・糖尿病内科クリニック。クリニックの理念・設備・基本情報をご紹介します。">
+  <meta property="og:url" content="https://【ドメイン名】/about.html">
+  <meta property="og:image" content="https://【ドメイン名】/images/ogp.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>医院紹介｜【クリニック名】｜旭川市の内科・糖尿病内科</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .philosophy-block {
+      background: linear-gradient(135deg, var(--color-primary-light) 0%, #fff 100%);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      margin: 28px 0;
+      border-left: 5px solid var(--color-primary);
+    }
+    .philosophy-block h3 {
+      font-size: 1.15rem;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+    .philosophy-block p {
+      font-size: 0.93rem;
+      line-height: 1.95;
+    }
+
+    .facility-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .facility-item {
+      background: var(--color-bg);
+      border-radius: var(--radius);
+      padding: 16px 12px;
+      text-align: center;
+      border: 1px solid var(--color-border);
+    }
+    .facility-item .icon {
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+    }
+    .facility-item p {
+      font-size: 0.82rem;
+      color: var(--color-text);
+      font-weight: 700;
+    }
+    .facility-item span {
+      font-size: 0.75rem;
+      color: var(--color-text-sub);
+    }
+
+    .concept-list {
+      list-style: none;
+      padding: 0;
+      counter-reset: concept;
+    }
+    .concept-list li {
+      counter-increment: concept;
+      padding: 18px 16px 18px 60px;
+      position: relative;
+      margin-bottom: 14px;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--color-border);
+    }
+    .concept-list li::before {
+      content: counter(concept);
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background: var(--color-primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .concept-list li h4 {
+      font-size: 0.95rem;
+      color: var(--color-primary);
+      margin-bottom: 5px;
+    }
+    .concept-list li p {
+      font-size: 0.85rem;
+      color: var(--color-text-sub);
+      line-height: 1.65;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+
+<!-- ===== ヘッダー ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-logo">
+      <a href="index.html" style="color:inherit; text-decoration:none;">
+        【クリニック名】
+        <span>内科・糖尿病内科</span>
+      </a>
+    </div>
+    <div class="header-right">
+      <div class="header-tel">
+        <a href="tel:【電話番号】">【電話番号】</a>
+        <span>受付時間 【診療時間】</span>
+      </div>
+      <a href="【予約URL】" class="btn-reserve-header">ネット予約</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="global-nav" id="globalNav" aria-label="メインナビゲーション">
+    <ul>
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="about.html" aria-current="page">医院紹介</a></li>
+      <li><a href="doctor.html">医師紹介</a></li>
+      <li><a href="treatment/index.html">診療内容</a></li>
+      <li><a href="first-visit.html">初診の方へ</a></li>
+      <li><a href="faq.html">よくある質問</a></li>
+      <li><a href="access.html">アクセス</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>医院紹介</h1>
+  <p>旭川市の地域に根ざした、話しやすいクリニックを目指して</p>
+</section>
+<div class="breadcrumb">
+  <a href="index.html">トップ</a> ＞ 医院紹介
+</div>
+
+<main id="main-content">
+  <!-- ===== クリニックの思い ===== -->
+  <section class="section">
+    <div class="section-inner">
+
+      <h2 class="lead-title">クリニックの理念</h2>
+      <div class="philosophy-block">
+        <h3>「来てよかった」と感じていただける場所へ</h3>
+        <p>
+          旭川市で内科・糖尿病内科クリニックを開院したのは、
+          「もっと気軽に相談できる医療の場所が必要だ」という思いからです。<br><br>
+          大きな病院では、どうしても「先生は忙しそう」「聞きにくい」
+          という場面が生まれてしまいます。
+          患者さんが自分の病気をしっかり理解した上で、
+          無理のない形で治療に取り組んでいただける——
+          そういう関係を、私たちは大切にしています。<br><br>
+          「ちょっと気になるけど、大げさかな」
+          そう思って来院された方がほとんどです。
+          どうか遠慮せずにいらしてください。
+        </p>
+      </div>
+
+      <!-- コンセプト -->
+      <h2 class="lead-title">3つのコンセプト</h2>
+      <ol class="concept-list">
+        <li>
+          <h4>話せる診療</h4>
+          <p>
+            「忙しそうで聞けなかった」という経験をお持ちの方もいらっしゃると思います。
+            当院では、問診に時間をかけ、患者さんが納得した上で治療方針を決めるスタイルを大切にしています。
+          </p>
+        </li>
+        <li>
+          <h4>分かる説明</h4>
+          <p>
+            難しい医療用語は、できるだけ分かりやすい言葉に置き換えてお伝えします。
+            「なぜこの薬が必要なのか」「この数値は何を意味するのか」、
+            一緒に確認しながら進めていきます。
+          </p>
+        </li>
+        <li>
+          <h4>続けられる治療</h4>
+          <p>
+            生活習慣病・糖尿病は、長く付き合っていく必要があります。
+            無理なく、生活に合わせた方法で取り組める治療計画を、患者さんと一緒に考えます。
+          </p>
+        </li>
+      </ol>
+
+      <!-- 院内設備 -->
+      <h2 class="lead-title">院内設備・環境</h2>
+      <p style="font-size:0.9rem; margin-bottom:16px; color:var(--color-text-sub);">
+        清潔感と安心感を大切にした空間づくりをしています。
+      </p>
+      <div class="facility-grid">
+        <div class="facility-item">
+          <div class="icon">🔬</div>
+          <p>院内検査機器</p>
+          <span>血液検査・尿検査など</span>
+        </div>
+        <div class="facility-item">
+          <div class="icon">📊</div>
+          <p>血糖測定機器</p>
+          <span>HbA1c 当日測定可能</span>
+        </div>
+        <div class="facility-item">
+          <div class="icon">🩺</div>
+          <p>心電図</p>
+          <span>院内で対応</span>
+        </div>
+        <div class="facility-item">
+          <div class="icon">♿</div>
+          <p>バリアフリー</p>
+          <span>車椅子対応・段差なし</span>
+        </div>
+        <div class="facility-item">
+          <div class="icon">🅿️</div>
+          <p>駐車場</p>
+          <span>【駐車場情報】</span>
+        </div>
+        <div class="facility-item">
+          <div class="icon">👁️</div>
+          <p>プライバシー配慮</p>
+          <span>個室診察室</span>
+        </div>
+      </div>
+      <p style="font-size:0.78rem; color:var(--color-text-sub); margin-top:8px;">
+        ※設備の詳細は変更になる場合があります。受診前にお電話でご確認ください。
+      </p>
+
+      <!-- 近隣の医療機関との連携 -->
+      <h2 class="lead-title">専門病院との連携について</h2>
+      <div class="balloon-box">
+        当院では対応が難しい場合や、より詳しい検査・入院治療が必要な場合は、
+        旭川市内の基幹病院と連携し、スムーズにご紹介できる体制を整えています。
+        「かかりつけ医」として、患者さんが適切な医療を受けられるよう橋渡しを行います。
+      </div>
+
+      <!-- 基本情報 -->
+      <h2 class="lead-title">基本情報</h2>
+      <table class="table-basic" style="margin-bottom:32px;">
+        <tbody>
+          <tr>
+            <th style="width:130px; background:var(--color-primary); color:#fff;">クリニック名</th>
+            <td>【クリニック名】</td>
+          </tr>
+          <tr>
+            <th style="background:var(--color-primary); color:#fff;">診療科目</th>
+            <td>内科・糖尿病内科・生活習慣病</td>
+          </tr>
+          <tr>
+            <th style="background:var(--color-primary); color:#fff;">所在地</th>
+            <td>〒【所在地（旭川市〇〇）】</td>
+          </tr>
+          <tr>
+            <th style="background:var(--color-primary); color:#fff;">電話番号</th>
+            <td><a href="tel:【電話番号】">【電話番号】</a></td>
+          </tr>
+          <tr>
+            <th style="background:var(--color-primary); color:#fff;">診療時間</th>
+            <td>【診療時間】<br><span style="font-size:0.8rem; color:var(--color-text-sub);">※詳細は<a href="access.html">アクセスページ</a>をご覧ください</span></td>
+          </tr>
+          <tr>
+            <th style="background:var(--color-primary); color:#fff;">駐車場</th>
+            <td>【駐車場情報】</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cta-block">
+        <p>まずはお気軽にご連絡ください</p>
+        <div class="btn-group">
+          <a href="【予約URL】" class="btn btn-accent">📅 ネットで予約する</a>
+          <a href="tel:【電話番号】" class="btn btn-primary">📞 お電話で相談する</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">【クリニック名】</div>
+    <div class="footer-info">
+      〒【所在地（旭川市〇〇）】<br>
+      TEL：<a href="tel:【電話番号】" style="color:#9bc;">【電話番号】</a><br>
+      診療時間：【診療時間】
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">トップ</a>
+      <a href="about.html">医院紹介</a>
+      <a href="doctor.html">医師紹介</a>
+      <a href="treatment/index.html">診療内容</a>
+      <a href="first-visit.html">初診の方へ</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="access.html">アクセス</a>
+    </nav>
+    <p class="footer-copy">© 【クリニック名】 All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="fixed-cta-bar" role="navigation" aria-label="予約ナビゲーション">
+  <a href="tel:【電話番号】" class="cta-tel">📞 電話で予約</a>
+  <a href="【予約URL】" class="cta-web">🗓 ネット予約</a>
+</div>
+
+<script>
+  function toggleNav() {
+    const nav     = document.getElementById('globalNav');
+    const overlay = document.getElementById('navOverlay');
+    const btn     = document.getElementById('navToggle');
+    const isOpen  = nav.classList.toggle('is-open');
+    overlay.classList.toggle('is-open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    btn.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+  }
+  function closeNav() {
+    const nav     = document.getElementById('globalNav');
+    const overlay = document.getElementById('navOverlay');
+    const btn     = document.getElementById('navToggle');
+    nav.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'メニューを開く');
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeNav();
+  });
+</script>
+
+<!--
+===========================================
+【医院紹介ページ】後から差し替えるべきポイント
+===========================================
+1. 「クリニックの理念」文章 → 実際の開院経緯・思いに書き直し
+2. 「3つのコンセプト」各項目 → 実際のクリニック方針に調整
+3. 院内設備6項目（アイコン・説明）→ 実際の設備・機器名に変更
+4. 【駐車場情報】→ 実際の台数・位置に変更
+5. 専門病院との連携先 → 実際の連携病院名（掲載可能な場合）を追記
+6. 基本情報テーブル全項目 → 正確な情報に変更
+7. 「HbA1c 当日測定可能」→ 実際の対応可否を確認の上で変更
+===========================================
+-->
+</body>
+</html>

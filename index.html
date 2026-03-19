@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO ===== -->
+  <meta name="description" content="旭川市の内科・糖尿病内科クリニック。女性医師が丁寧に対応。血糖値・HbA1cが気になる方、生活習慣病・高血圧のご相談はお気軽に。旭川市内科 女性医師。">
+  <meta name="keywords" content="旭川市 内科,旭川市 糖尿病内科,旭川市 生活習慣病,旭川市 女性医師,旭川市 発熱外来">
+  <!-- 🔴 NEW: canonical -->
+  <link rel="canonical" href="https://【ドメイン名】/index.html">
+
+  <!-- ===== OGP（SNSシェア用） 🔴 NEW ===== -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="【クリニック名】｜旭川市の内科・糖尿病内科（女性医師）">
+  <meta property="og:description" content="旭川市の内科・糖尿病内科クリニック。女性医師が丁寧に対応。健診で血糖値が気になる方もお気軽にご相談を。">
+  <meta property="og:url"         content="https://【ドメイン名】/">
+  <meta property="og:image"       content="https://【ドメイン名】/images/ogp.jpg">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <title>【クリニック名】｜旭川市の内科・糖尿病内科（女性医師）</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ===== 構造化データ（JSON-LD）🔴 NEW: ローカルSEOの核心 ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "【クリニック名】",
+    "description": "旭川市の内科・糖尿病内科クリニック。女性医師が丁寧に対応。糖尿病・生活習慣病・一般内科・発熱外来に対応します。",
+    "url": "https://【ドメイン名】/",
+    "telephone": "【電話番号】",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "【番地以下】",
+      "addressLocality": "旭川市",
+      "addressRegion": "北海道",
+      "postalCode": "【郵便番号】",
+      "addressCountry": "JP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude":  "【緯度】",
+      "longitude": "【経度】"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"],
+        "opens": "【午前開始時間 例:09:00】",
+        "closes": "【午後終了時間 例:18:00】"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday"],
+        "opens": "【午前開始時間】",
+        "closes": "【午前終了時間 例:12:30】"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "【午前開始時間】",
+        "closes": "【土曜終了時間】"
+      }
+    ],
+    "medicalSpecialty": [
+      "InternalMedicine",
+      "Endocrinology"
+    ],
+    "availableService": [
+      {"@type": "MedicalTherapy", "name": "糖尿病内科"},
+      {"@type": "MedicalTherapy", "name": "生活習慣病"},
+      {"@type": "MedicalTherapy", "name": "高血圧"},
+      {"@type": "MedicalTherapy", "name": "脂質異常症"},
+      {"@type": "MedicalTherapy", "name": "発熱外来"}
+    ],
+    "currenciesAccepted": "JPY",
+    "paymentAccepted": "現金, クレジットカード",
+    "priceRange": "保険診療",
+    "hasMap": "https://maps.google.com/?q=【所在地（旭川市〇〇）】",
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    /* ===== トップページ専用スタイル ===== */
+    .hero {
+      background: linear-gradient(150deg, #e8f3fb 0%, #d0e8f8 40%, #c5e0f5 100%);
+      padding: 40px 16px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -32px;
+      left: -10%;
+      width: 120%;
+      height: 64px;
+      background: #fff;
+      border-radius: 50%;
+    }
+    .hero-label {
+      display: inline-block;
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.8rem;
+      padding: 5px 16px;
+      border-radius: 50px;
+      margin-bottom: 18px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    .hero h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #1a3a5c;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .hero h1 em {
+      color: var(--color-primary);
+      font-style: normal;
+    }
+    .hero-sub {
+      font-size: 0.95rem;
+      color: #446;
+      margin-bottom: 28px;
+      line-height: 1.8;
+    }
+    .hero-sub strong {
+      color: var(--color-primary);
+      font-size: 1.05rem;
+      display: inline-block;
+      margin: 4px 0;
+    }
+    .hero-cta {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .hero-cta .btn {
+      width: 100%;
+      max-width: 320px;
+    }
+    /* 🔴 NEW: 予約ボタン下の営業時間ヒント */
+    .hero-time-hint {
+      font-size: 0.78rem;
+      color: #558;
+      margin-top: 4px;
+    }
+    .hero-tel-block {
+      font-size: 0.82rem;
+      color: #446;
+      margin-top: 8px;
+    }
+    .hero-tel-block strong {
+      font-size: 1.3rem;
+      color: var(--color-primary);
+      display: block;
+    }
+
+    /* 強みカード */
+    .strength-card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow);
+      border-top: 4px solid var(--color-primary);
+      text-align: center;
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .strength-card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
+    }
+    .strength-card .icon {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+    .strength-card h3 {
+      font-size: 0.95rem;
+      color: var(--color-primary);
+      margin-bottom: 8px;
+    }
+    .strength-card p {
+      font-size: 0.85rem;
+      color: var(--color-text-sub);
+      line-height: 1.7;
+    }
+
+    /* お悩みセクション */
+    .worry-list {
+      list-style: none;
+      padding: 0;
+    }
+    .worry-list li {
+      background: #fff;
+      border-left: 4px solid var(--color-accent);
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      font-size: 0.92rem;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      line-height: 1.6;
+    }
+    .worry-list li::before {
+      content: '💭 ';
+    }
+
+    /* 医師バナー */
+    .doctor-banner {
+      background: linear-gradient(135deg, #1c5f94 0%, #2b7bb9 100%);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 28px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      text-align: center;
+    }
+    .doctor-banner-photo {
+      width: 100px;
+      height: 120px;
+      background: rgba(255,255,255,0.2);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      border: 2px dashed rgba(255,255,255,0.5);
+      color: rgba(255,255,255,0.8);
+      flex-shrink: 0;
+    }
+    .doctor-banner h3 {
+      font-size: 0.82rem;
+      opacity: 0.8;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+    .doctor-banner .name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .doctor-banner p {
+      font-size: 0.88rem;
+      opacity: 0.92;
+      line-height: 1.75;
+    }
+    .doctor-banner-link {
+      display: inline-block;
+      margin-top: 14px;
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.4);
+      transition: background var(--transition);
+    }
+    .doctor-banner-link:hover {
+      background: rgba(255,255,255,0.3);
+      text-decoration: none;
+    }
+
+    /* 診療ショートカット */
+    .treatment-shortcuts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .treatment-shortcut-item {
+      background: #fff;
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 18px 12px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--color-text);
+      transition: border-color var(--transition), background var(--transition), transform var(--transition);
+      display: block;
+    }
+    .treatment-shortcut-item:hover {
+      border-color: var(--color-primary);
+      background: var(--color-primary-light);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+    .treatment-shortcut-item .icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    .treatment-shortcut-item p {
+      font-size: 0.82rem;
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+
+    /* 診療時間テーブル */
+    .hours-table th {
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.85rem;
+      padding: 10px 6px;
+      text-align: center;
+    }
+    .hours-table td {
+      font-size: 0.875rem;
+      padding: 10px 6px;
+      text-align: center;
+    }
+    .hours-table .circle  { color: var(--color-primary); font-weight: 700; }
+    .hours-table .triangle { color: var(--color-accent); font-weight: 700; }
+    .hours-table .closed  { color: #aaa; }
+
+    /* 🔴 NEW: 「来院された方の声」風バナー */
+    .social-proof {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      margin: 24px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .social-proof .icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .social-proof p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: var(--color-text);
+    }
+    .social-proof p strong {
+      color: var(--color-primary);
+      font-size: 0.92rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    @media (min-width: 768px) {
+      .doctor-banner {
+        flex-direction: row;
+        text-align: left;
+      }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🔴 NEW: スキップリンク（アクセシビリティ） -->
+<a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+<!-- 🔴 NEW: スマホナビオーバーレイ（背景クリックで閉じる） -->
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+
+<!-- ===== ヘッダー ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-logo">
+      <a href="index.html">
+        【クリニック名】
+        <span>内科・糖尿病内科</span>
+      </a>
+    </div>
+    <div class="header-right">
+      <div class="header-tel">
+        <a href="tel:【電話番号】">【電話番号】</a>
+        <span>受付時間 【診療時間】</span>
+      </div>
+      <a href="【予約URL】" class="btn-reserve-header">ネット予約</a>
+      <!-- 🔴 FIX: aria-expanded で開閉状態を通知 -->
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="global-nav" id="globalNav" aria-label="メインナビゲーション">
+    <ul>
+      <li><a href="index.html" aria-current="page">トップ</a></li>
+      <li><a href="about.html">医院紹介</a></li>
+      <li><a href="doctor.html">医師紹介</a></li>
+      <li><a href="treatment/index.html">診療内容</a></li>
+      <li><a href="first-visit.html">初診の方へ</a></li>
+      <li><a href="faq.html">よくある質問</a></li>
+      <li><a href="access.html">アクセス</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- 🔴 FIX: <main> タグを追加（アクセシビリティ・SEO改善） -->
+<main id="main-content">
+
+  <!-- ===== ファーストビュー ===== -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <p class="hero-label">旭川市の内科・糖尿病内科</p>
+    <h1 id="hero-heading">
+      「また来年でいいか」——<br>
+      <em>その先送りが、いちばんこわい</em>
+    </h1>
+    <p class="hero-sub">
+      血糖値・血圧・体重……健診で気になったまま、放置していませんか？<br>
+      <strong>怒りません。責めません。</strong><br>
+      女性医師が、あなたのペースで一緒に考えます。
+    </p>
+    <div class="hero-cta">
+      <a href="【予約URL】" class="btn btn-accent btn-lg pulse">📅 ネットで予約する（3分で完了）</a>
+      <a href="tel:【電話番号】" class="btn btn-primary btn-lg">📞 まず電話で相談するだけでもOK</a>
+    </div>
+    <p class="hero-time-hint">受付時間：【診療時間】｜ネット予約は24時間受付</p>
+    <div class="hero-tel-block">
+      <strong>【電話番号】</strong>
+    </div>
+  </section>
+
+  <!-- ===== こんなお悩みありませんか？ ===== -->
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title">こんなお悩みはありませんか？</h2>
+      <ul class="worry-list">
+        <li>健康診断で「血糖値が高い」と言われたけど、どうすればいいか分からない</li>
+        <li>じわじわ体重が増えて、健診でも毎年同じことを言われている</li>
+        <li>親が糖尿病。自分も気をつけなければと思いつつ、もう何年も放置している</li>
+        <li>どうせ「生活改善してください」って怒られるだけ、と思うと足が向かない</li>
+        <li>なんとなくだるい、疲れやすい——でも受診するほどじゃないと思っている</li>
+        <li>以前の先生には話しにくかった。もっと正直に話せる場所が欲しい</li>
+      </ul>
+      <div class="balloon-box">
+        <strong>ひとつでも「あるある」と感じたら、ぜひ来てください。</strong><br>
+        怒りません。責めません。「今まで放置していた」という方こそ、大歓迎です。<br>
+        あなたのペースで、一緒に考えていきます。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3つの安心 ===== -->
+  <section class="section section-bg">
+    <div class="section-inner">
+      <h2 class="section-title">当院が選ばれる3つの理由</h2>
+      <!-- 🔴 NEW: リード文を追加してセクションの文脈を補強 -->
+      <p style="text-align:center; font-size:0.9rem; color:var(--color-text-sub); margin-bottom:28px; margin-top:-16px;">
+        旭川市の患者さんに「来てよかった」と感じていただけるよう、3つの点を大切にしています。
+      </p>
+      <div class="card-grid col3">
+        <div class="strength-card">
+          <div class="icon">👩‍⚕️</div>
+          <h3>「言いにくいこと」が話せる</h3>
+          <p>体型・生活の乱れ・放置してきた後ろめたさ……女性医師だから、正直に話せます。怒りません。</p>
+        </div>
+        <div class="strength-card">
+          <div class="icon">🤝</div>
+          <h3>「何でも聞いていい」診療</h3>
+          <p>「こんなこと聞いていいの？」は当院にはありません。納得いくまで、何でも聞いてください。</p>
+        </div>
+        <div class="strength-card">
+          <div class="icon">🩺</div>
+          <h3>今からでも、間に合います</h3>
+          <p>「もう遅いかな」は思い込みです。専門医が、あなたに合った改善策を一緒に見つけます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔴 NEW: 来院された方の声（社会的証明） -->
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title">来院された方の声</h2>
+      <p style="text-align:center; font-size:0.8rem; color:var(--color-text-sub); margin-top:-20px; margin-bottom:24px;">
+        ※掲載に同意いただいた患者さんの声をご紹介しています（個人が特定されないよう一部編集しています）
+      </p>
+
+      <div class="social-proof">
+        <div class="icon">💬</div>
+        <p>
+          <strong>50代・女性（糖尿病の管理で通院中）</strong>
+          「健診でひっかかってずっと放置していたのですが、怒られるかと思っていたら全然そんなことなく、一緒に考えてもらえました。女性の先生で話しやすかったです。」
+        </p>
+      </div>
+
+      <div class="social-proof">
+        <div class="icon">💬</div>
+        <p>
+          <strong>60代・男性（高血圧・血糖値管理）</strong>
+          「以前の病院では説明が難しくてよく分からなかったのですが、ここの先生はかみ砕いて教えてくれます。何でも聞けるのがありがたいです。」
+        </p>
+      </div>
+
+      <div class="social-proof">
+        <div class="icon">💬</div>
+        <p>
+          <strong>40代・女性（初診）</strong>
+          「子どもを連れて行ったのですが、スタッフの方もとても親切で、待合室も落ち着いた雰囲気でした。予約もスムーズでよかったです。」
+        </p>
+      </div>
+
+      <p style="font-size:0.78rem; color:var(--color-text-sub); margin-top:8px;">
+        ※患者さんの感想は個人の体験であり、治療効果を保証するものではありません。
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 医師紹介バナー ===== -->
+  <section class="section section-bg">
+    <div class="section-inner">
+      <h2 class="section-title">担当医師のご紹介</h2>
+      <div class="doctor-banner">
+        <div class="doctor-banner-photo" aria-hidden="true">
+          【医師<br>写真】
+        </div>
+        <div>
+          <h3>院長・内科・糖尿病内科</h3>
+          <div class="name">【医師名】 先生</div>
+          <p>
+            「放置していた、という方ほど来てください。責めません。<br>
+            今日から始めれば間に合う——そう伝えることが、私の仕事だと思っています。」
+          </p>
+          <a href="doctor.html" class="doctor-banner-link">先生のストーリーを読む →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 診療内容ショートカット ===== -->
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title">診療内容</h2>
+      <div class="treatment-shortcuts">
+        <a href="treatment/diabetes.html" class="treatment-shortcut-item">
+          <div class="icon">🩸</div>
+          <p>糖尿病内科</p>
+        </a>
+        <a href="treatment/lifestyle.html" class="treatment-shortcut-item">
+          <div class="icon">❤️</div>
+          <p>生活習慣病</p>
+        </a>
+        <a href="treatment/general.html" class="treatment-shortcut-item">
+          <div class="icon">🤒</div>
+          <p>一般内科・発熱外来</p>
+        </a>
+        <a href="treatment/index.html" class="treatment-shortcut-item">
+          <div class="icon">📋</div>
+          <p>診療内容一覧</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 初診の方へ案内 ===== -->
+  <section class="section section-bg">
+    <div class="section-inner">
+      <h2 class="section-title">はじめての方へ</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">📝</div>
+          <h3>持ち物について</h3>
+          <p>健康保険証・お薬手帳（あれば）・健康診断の結果票（あれば）をお持ちください。それだけで大丈夫です。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⏱</div>
+          <h3>所要時間の目安</h3>
+          <p>初診は問診を丁寧に行うため、1時間前後を目安にお時間をとっていただけると助かります。</p>
+        </div>
+      </div>
+      <div class="cta-block">
+        <p class="cta-main-text">初めての方でも、一人で抱えなくて大丈夫です</p>
+        <p class="cta-sub-text">「何を話せばいい？」「何を持っていけばいい？」——全部、事前に確認できます</p>
+        <div class="btn-group">
+          <a href="first-visit.html" class="btn btn-outline">初診の方へ詳しく見る</a>
+          <a href="【予約URL】" class="btn btn-accent pulse">ネットで予約する（3分で完了）</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 診療時間 ===== -->
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title">診療時間・アクセス</h2>
+      <div style="overflow-x:auto; margin-bottom:20px; -webkit-overflow-scrolling:touch;">
+        <table class="table-basic hours-table" style="min-width:480px;">
+          <caption style="text-align:left; font-size:0.8rem; color:var(--color-text-sub); padding:0 0 8px; caption-side:top;">
+            ○…診療あり　△…午前のみ　休…休診
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">診療時間</th>
+              <th scope="col">月</th><th scope="col">火</th><th scope="col">水</th>
+              <th scope="col">木</th><th scope="col">金</th><th scope="col">土</th><th scope="col">日祝</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>午前【時間】</td>
+              <td class="circle">○</td>
+              <td class="circle">○</td>
+              <td class="circle">○</td>
+              <td class="circle">○</td>
+              <td class="circle">○</td>
+              <td class="triangle">△</td>
+              <td class="closed">休</td>
+            </tr>
+            <tr>
+              <td>午後【時間】</td>
+              <td class="circle">○</td>
+              <td class="circle">○</td>
+              <td class="closed">休</td>
+              <td class="circle">○</td>
+              <td class="circle">○</td>
+              <td class="closed">休</td>
+              <td class="closed">休</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.8rem; color:var(--color-text-sub); margin-bottom:24px;">
+        ※診療時間は変更になる場合があります。最新情報はお電話にてご確認ください。
+      </p>
+      <div class="map-placeholder" role="img" aria-label="クリニックの地図（後日Googleマップを埋め込み予定）">
+        <span>📍</span>
+        <span>Google マップを埋め込む</span>
+        <span style="font-size:0.8rem;">【所在地（旭川市〇〇）】</span>
+      </div>
+      <p style="text-align:center; margin-top:16px;">
+        <a href="access.html" class="btn btn-outline">詳しいアクセスを見る</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== ページ下部CTA ===== -->
+  <section class="section section-blue" aria-labelledby="bottom-cta-heading">
+    <div class="section-inner" style="text-align:center;">
+      <h2 class="section-title light" id="bottom-cta-heading">気になっているなら、今がそのときです</h2>
+      <p style="margin-bottom:28px; font-size:0.95rem; line-height:1.85;">
+        後回しにするほど、選択肢は狭くなります。でも今気づいたなら、まだ間に合います。<br>
+        「怒られそう」なんて心配はいりません——<strong>来てくれたことが、いちばん大事です。</strong><br>
+        <span style="font-size:0.85rem; opacity:0.8;">旭川市の内科・糖尿病内科（女性医師在籍）【クリニック名】</span>
+      </p>
+      <div class="btn-group">
+        <a href="【予約URL】" class="btn btn-accent btn-lg pulse">📅 ネットで予約する</a>
+        <a href="tel:【電話番号】" class="btn btn-lg" style="background:#fff; color:var(--color-primary); min-height:48px;">📞 【電話番号】</a>
+      </div>
+      <p style="font-size:0.78rem; opacity:0.75; margin-top:16px;">ネット予約は24時間受付 ／ 電話受付：【診療時間】</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== フッター ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">【クリニック名】</div>
+    <div class="footer-info">
+      〒【所在地（旭川市〇〇）】<br>
+      TEL：<a href="tel:【電話番号】" style="color:#9bc;">【電話番号】</a><br>
+      診療時間：【診療時間】
+    </div>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="index.html">トップ</a>
+      <a href="about.html">医院紹介</a>
+      <a href="doctor.html">医師紹介</a>
+      <a href="treatment/index.html">診療内容</a>
+      <a href="first-visit.html">初診の方へ</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="access.html">アクセス</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+    <p class="footer-copy">© 【クリニック名】 All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== スマホ固定CTA ===== -->
+<div class="fixed-cta-bar" role="navigation" aria-label="予約ナビゲーション">
+  <a href="tel:【電話番号】" class="cta-tel">📞 電話で予約</a>
+  <a href="【予約URL】" class="cta-web">🗓 ネット予約</a>
+</div>
+
+<script>
+  /* ===== ナビゲーション制御 ===== */
+  function toggleNav() {
+    const nav     = document.getElementById('globalNav');
+    const overlay = document.getElementById('navOverlay');
+    const btn     = document.getElementById('navToggle');
+    const isOpen  = nav.classList.toggle('is-open');
+    overlay.classList.toggle('is-open', isOpen);
+    /* 🔴 FIX: aria-expanded を更新 */
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    btn.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+  }
+
+  function closeNav() {
+    const nav     = document.getElementById('globalNav');
+    const overlay = document.getElementById('navOverlay');
+    const btn     = document.getElementById('navToggle');
+    nav.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'メニューを開く');
+  }
+
+  /* Escキーでナビを閉じる */
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeNav();
+  });
+
+  /* アコーディオン（faq.htmlなどで流用） */
+  document.querySelectorAll('.accordion-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      this.classList.toggle('is-open');
+      this.nextElementSibling.classList.toggle('is-open');
+    });
+  });
+</script>
+
+<!--
+===========================================
+【トップページ】後から差し替えるべきポイント
+===========================================
+1.  【クリニック名】→ 正式名称に変更（全ページ共通）
+2.  【電話番号】→ 実際の電話番号（全ページ共通）
+3.  【予約URL】→ ネット予約システムのURL（全ページ共通）
+4.  【診療時間】→ 実際の曜日・時間帯（全ページ共通）
+5.  【ドメイン名】→ 実際のドメインに変更（canonical・OGP・JSON-LD）
+6.  診療時間テーブルの○△休 → 実際のスケジュールに変更
+7.  JSON-LD の住所・座標・営業時間 → 正確な情報に変更
+8.  OGP画像（ogp.jpg）→ 1200×630px の画像を作成・配置
+9.  「来院された方の声」3件 → 実際の患者さんへの許諾取得後に差し替え
+10. 医師名・医師写真 → 掲載合意後に変更
+11. 医師のコメント文 → 先生の実際の言葉に変更
+12. 「ネット予約は24時間受付」→ 実際の予約システムに合わせて変更
+===========================================
+-->
+</body>
+</html>

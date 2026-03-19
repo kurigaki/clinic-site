@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="旭川市の糖尿病内科。血糖値・HbA1cが高い方、健診でD判定だった方のご相談を受け付けています。女性医師が丁寧に対応。糖尿病の症状・治療・合併症を分かりやすく説明。旭川市 糖尿病内科。">
+  <link rel="canonical" href="https://【ドメイン名】/treatment/diabetes.html">
+
+  <!-- OGP 🔴 NEW -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="糖尿病内科｜旭川市【クリニック名】｜血糖値・HbA1cが気になる方へ">
+  <meta property="og:description" content="血糖値・HbA1cが高い方のご相談を受け付けています。糖尿病とは何か、症状・治療・合併症を旭川市の女性医師が分かりやすく解説。">
+  <meta property="og:url"         content="https://【ドメイン名】/treatment/diabetes.html">
+  <meta property="og:image"       content="https://【ドメイン名】/images/ogp.jpg">
+  <meta property="og:locale"      content="ja_JP">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <title>糖尿病内科｜旭川市【クリニック名】｜血糖値・HbA1cのご相談</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- 糖尿病に関する構造化データ 🔴 NEW -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "糖尿病内科 | 旭川市【クリニック名】",
+    "description": "旭川市の糖尿病内科クリニック。糖尿病の診断・治療・管理を女性医師が丁寧に対応します。",
+    "url": "https://【ドメイン名】/treatment/diabetes.html",
+    "about": {
+      "@type": "MedicalCondition",
+      "name": "糖尿病",
+      "alternateName": "Diabetes Mellitus",
+      "code": {
+        "@type": "MedicalCode",
+        "codeValue": "E11",
+        "codingSystem": "ICD-10"
+      },
+      "associatedAnatomy": {
+        "@type": "AnatomicalSystem",
+        "name": "膵臓・内分泌系"
+      },
+      "signOrSymptom": [
+        {"@type": "MedicalSymptom", "name": "口の渇き"},
+        {"@type": "MedicalSymptom", "name": "頻尿"},
+        {"@type": "MedicalSymptom", "name": "疲れやすさ"},
+        {"@type": "MedicalSymptom", "name": "体重減少"},
+        {"@type": "MedicalSymptom", "name": "手足のしびれ"}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    /* 糖尿病ページ専用スタイル */
+    .risk-box {
+      background: #fff5f5;
+      border: 2px solid #f5c0c0;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .risk-box h3 {
+      color: #c0392b;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+    .risk-list {
+      list-style: none;
+      padding: 0;
+    }
+    .risk-list li {
+      padding: 10px 0 10px 32px;
+      position: relative;
+      font-size: 0.9rem;
+      border-bottom: 1px solid #fde0e0;
+      line-height: 1.7;
+    }
+    .risk-list li:last-child { border-bottom: none; }
+    .risk-list li::before {
+      content: '⚠️';
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+
+    .type-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin: 16px 0;
+    }
+    .type-card {
+      border-radius: var(--radius);
+      padding: 18px;
+      border: 1px solid var(--color-border);
+    }
+    .type-card.type1 { background: #f0f7ff; border-color: #b0d0f0; }
+    .type-card.type2 { background: #f0fff4; border-color: #b0e0c0; }
+    .type-card h3 { font-size: 0.95rem; margin-bottom: 8px; }
+    .type-card.type1 h3 { color: #1c5f94; }
+    .type-card.type2 h3 { color: #1a7a3a; }
+    .type-card p { font-size: 0.85rem; line-height: 1.75; }
+
+    /* 血糖値テーブル */
+    .value-table th {
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.85rem;
+      padding: 10px;
+      text-align: center;
+    }
+    .value-table td {
+      font-size: 0.875rem;
+      padding: 10px;
+      text-align: center;
+    }
+    .value-table .normal  { color: #1a7a3a; font-weight: 700; }
+    .value-table .caution { color: #e87b2f; font-weight: 700; }
+    .value-table .danger  { color: #c0392b; font-weight: 700; }
+
+    /* 治療フロー */
+    .flow-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px 16px;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--color-border);
+      margin-bottom: 10px;
+    }
+    .flow-step .num {
+      width: 36px;
+      height: 36px;
+      background: var(--color-primary);
+      color: #fff;
+      border-radius: 50%;
+      /* 🔴 FIX: display:flex → text-align + line-height */
+      text-align: center;
+      line-height: 36px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .flow-step h4 {
+      font-size: 0.92rem;
+      color: var(--color-primary);
+      margin-bottom: 5px;
+    }
+    .flow-step p {
+      font-size: 0.85rem;
+      color: var(--color-text-sub);
+      line-height: 1.65;
+    }
+
+    /* 症状グリッド */
+    .symptom-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 16px 0;
+    }
+    .symptom-item {
+      background: var(--color-bg);
+      border-radius: var(--radius);
+      padding: 14px 10px;
+      text-align: center;
+      border: 1px solid var(--color-border);
+      font-size: 0.875rem;
+      line-height: 1.4;
+      transition: background var(--transition);
+    }
+    .symptom-item:hover { background: var(--color-primary-light); }
+    .symptom-item .icon { font-size: 1.6rem; margin-bottom: 6px; display: block; }
+
+    /* 🔴 NEW: ページ中間CTA（離脱防止） */
+    .mid-cta {
+      background: linear-gradient(135deg, #1c5f94 0%, #2b7bb9 100%);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 28px 20px;
+      margin: 36px 0;
+      text-align: center;
+    }
+    .mid-cta h3 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+    }
+    .mid-cta p {
+      font-size: 0.88rem;
+      opacity: 0.9;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+    .mid-cta .btn-accent {
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+    }
+
+    @media (min-width: 768px) {
+      .type-cards { grid-template-columns: repeat(2, 1fr); }
+      .symptom-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-logo">
+      <a href="../index.html">
+        【クリニック名】
+        <span>内科・糖尿病内科</span>
+      </a>
+    </div>
+    <div class="header-right">
+      <div class="header-tel">
+        <a href="tel:【電話番号】">【電話番号】</a>
+        <span>受付時間 【診療時間】</span>
+      </div>
+      <a href="【予約URL】" class="btn-reserve-header">ネット予約</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="global-nav" id="globalNav" aria-label="メインナビゲーション">
+    <ul>
+      <li><a href="../index.html">トップ</a></li>
+      <li><a href="../about.html">医院紹介</a></li>
+      <li><a href="../doctor.html">医師紹介</a></li>
+      <li><a href="index.html">診療内容</a></li>
+      <li><a href="../first-visit.html">初診の方へ</a></li>
+      <li><a href="../faq.html">よくある質問</a></li>
+      <li><a href="../access.html">アクセス</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>糖尿病内科</h1>
+  <p>旭川市で、血糖値・HbA1cのご相談をお気軽に</p>
+</section>
+<div class="breadcrumb">
+  <a href="../index.html">トップ</a> ＞ <a href="index.html">診療内容</a> ＞ 糖尿病内科
+</div>
+
+<main id="main-content">
+  <section class="section">
+    <div class="section-inner">
+
+      <!-- 共感フック -->
+      <div class="balloon-box">
+        「健診で血糖値が高いと言われたけど、自覚症状がないし大丈夫かな？」<br>
+        「糖尿病と言われたら、一生薬を飲まないといけないの？」<br>
+        「甘いものが好きで…やっぱり怒られるかな」<br><br>
+        <strong>そんな不安を持って来院される方がほとんどです。まずはご相談だけでも構いません。</strong>
+      </div>
+
+      <!-- 🔴 NEW: ページ内目次（長いページの離脱防止） -->
+      <nav class="page-toc" aria-label="このページの目次">
+        <h3>このページで分かること</h3>
+        <ul>
+          <li><a href="#what">糖尿病とは？</a></li>
+          <li><a href="#value">血糖値の目安</a></li>
+          <li><a href="#symptoms">よくある症状</a></li>
+          <li><a href="#risk">放置のリスク</a></li>
+          <li><a href="#flow">治療の流れ</a></li>
+          <li><a href="#target">こんな方へ</a></li>
+        </ul>
+      </nav>
+
+      <!-- ===== 糖尿病とは ===== -->
+      <h2 class="lead-title" id="what">糖尿病とは何か——分かりやすく説明します</h2>
+      <p style="font-size:0.92rem; line-height:1.95;">
+        糖尿病とは、血液の中に含まれる「血糖」（ブドウ糖）が、
+        必要以上に増えてしまう病気です。<br><br>
+        本来、食事で摂ったブドウ糖は「インスリン」というホルモンの力を借りて、
+        体の細胞のエネルギーとして使われます。
+        ところが糖尿病になると、このインスリンがうまく働かなくなるため、
+        血糖が血液の中に溢れた状態が続きます。<br><br>
+        「血糖が高いくらい大丈夫では？」と思われるかもしれませんが、
+        この状態が続くと全身の血管や神経に少しずつダメージが蓄積し、
+        将来的に深刻な合併症を引き起こす可能性があります。
+      </p>
+
+      <h3 class="sub-title">糖尿病の主な2つのタイプ</h3>
+      <div class="type-cards">
+        <div class="type-card type1">
+          <h3>1型糖尿病</h3>
+          <p>インスリンを作る細胞が壊れてしまい、ほとんどインスリンを分泌できなくなるタイプ。子どもや若い方に多く見られます。</p>
+        </div>
+        <div class="type-card type2">
+          <h3>2型糖尿病（日本人の95%以上）</h3>
+          <p>生活習慣（食事・運動・睡眠など）や体質が関係して、インスリンが不足したり効きにくくなるタイプ。生活習慣の改善が治療の土台になります。</p>
+        </div>
+      </div>
+      <p style="font-size:0.82rem; color:var(--color-text-sub);">
+        ※当院では主に2型糖尿病の診療を行っています。
+      </p>
+
+      <!-- ===== 血糖値の目安 ===== -->
+      <h2 class="lead-title" id="value">血糖値・HbA1cの見方</h2>
+      <p style="font-size:0.9rem; margin-bottom:12px; line-height:1.8;">
+        健診の結果票でよく見る数値の目安です。<br>
+        <span style="font-size:0.82rem; color:var(--color-text-sub);">（診断は医師が総合的に行いますので、数値だけで自己判断しないようにしてください）</span>
+      </p>
+      <div style="overflow-x:auto; -webkit-overflow-scrolling:touch;">
+        <table class="table-basic value-table" style="min-width:380px;">
+          <caption style="text-align:left; font-size:0.78rem; color:var(--color-text-sub); padding-bottom:6px; caption-side:top;">
+            ※空腹時に測定した場合の目安です
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">区分</th>
+              <th scope="col">空腹時血糖</th>
+              <th scope="col">HbA1c</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="normal">正常</td>
+              <td>110 mg/dL 未満</td>
+              <td>5.6% 未満</td>
+            </tr>
+            <tr>
+              <td class="caution">要注意（境界型）</td>
+              <td>110〜125 mg/dL</td>
+              <td>5.6〜6.4%</td>
+            </tr>
+            <tr>
+              <td class="danger">糖尿病が強く疑われる</td>
+              <td>126 mg/dL 以上</td>
+              <td>6.5% 以上</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="balloon-box" style="margin-top:16px;">
+        <strong>「境界型」でも放置はNGです。</strong><br>
+        糖尿病の一歩手前の状態です。この段階で生活習慣を改善すると、糖尿病への進行を防げる可能性があります。ぜひ早めにご相談ください。
+      </div>
+
+      <!-- ===== 症状 ===== -->
+      <h2 class="lead-title" id="symptoms">糖尿病のよくある症状</h2>
+      <p style="font-size:0.9rem; margin-bottom:12px; line-height:1.8;">
+        <strong>初期はほとんど症状がありません。</strong>だからこそ健診での発見が重要です。
+        以下の症状がある方は早めにご相談ください。
+      </p>
+      <div class="symptom-grid">
+        <div class="symptom-item"><span class="icon">💧</span>口がよく渇く</div>
+        <div class="symptom-item"><span class="icon">🚽</span>トイレが近い</div>
+        <div class="symptom-item"><span class="icon">😴</span>疲れやすい・だるい</div>
+        <div class="symptom-item"><span class="icon">⚖️</span>体重が急に減った</div>
+        <div class="symptom-item"><span class="icon">👁️</span>視界がぼやける</div>
+        <div class="symptom-item"><span class="icon">🦵</span>手足のしびれ</div>
+        <div class="symptom-item"><span class="icon">🍽️</span>食後に強く眠くなる</div>
+        <div class="symptom-item"><span class="icon">🩹</span>傷が治りにくい</div>
+      </div>
+      <p style="font-size:0.82rem; color:var(--color-text-sub); margin-top:8px;">
+        ※症状がなくても糖尿病が進行することがあります。健診で数値を指摘された方は受診をお勧めします。
+      </p>
+
+      <!-- ===== 放置リスク ===== -->
+      <h2 class="lead-title" id="risk">放置すると起きること</h2>
+      <p style="font-size:0.9rem; margin-bottom:12px; line-height:1.8;">
+        「自覚症状がないから大丈夫」は危険なサインです。糖尿病を放置すると、
+        全身の血管や神経がダメージを受け続け、以下のような合併症が起きることがあります。
+      </p>
+      <div class="risk-box">
+        <h3>代表的な合併症（3大合併症）</h3>
+        <ul class="risk-list">
+          <li>
+            <strong>糖尿病性神経障害</strong>——手足のしびれ、感覚の低下。
+            足の傷に気づかず悪化することがあります。
+          </li>
+          <li>
+            <strong>糖尿病性網膜症</strong>——目の血管がダメージを受け、視力が低下することがあります。
+            定期的な眼科受診が大切です。
+          </li>
+          <li>
+            <strong>糖尿病性腎症</strong>——腎臓の機能が徐々に低下します。
+            進行すると透析が必要になる場合があります。
+          </li>
+        </ul>
+        <p style="font-size:0.82rem; margin-top:12px; color:#888;">
+          また、心筋梗塞・脳卒中のリスクも上がることが知られています。
+        </p>
+      </div>
+
+      <!-- 🔴 NEW: 放置リスク後の中間CTA（最も離脱しやすいタイミング） -->
+      <div class="mid-cta">
+        <h3>「もう遅いかも…」と思っている方へ</h3>
+        <p>
+          早めに管理を始めれば、合併症の多くは防ぐことができます。<br>
+          「もう遅い」ということはありません。今からでも十分間に合います。<br>
+          旭川市の糖尿病内科、【クリニック名】へご相談ください。
+        </p>
+        <div class="btn-group">
+          <a href="【予約URL】" class="btn btn-accent pulse">📅 ネットで予約する</a>
+          <a href="tel:【電話番号】" class="btn" style="background:rgba(255,255,255,0.2); color:#fff; border:1px solid rgba(255,255,255,0.5);">📞 お電話する</a>
+        </div>
+      </div>
+
+      <!-- ===== 治療の流れ ===== -->
+      <h2 class="lead-title" id="flow">当院での治療の流れ</h2>
+      <div class="flow-step">
+        <div class="num" aria-hidden="true">1</div>
+        <div>
+          <h4>問診・検査（初回）</h4>
+          <p>血液検査・尿検査・体重・血圧などを測定します。健診結果をお持ちの方は、ぜひ持参してください。結果は当日または後日ご説明します。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="num" aria-hidden="true">2</div>
+        <div>
+          <h4>現状の把握・目標設定</h4>
+          <p>数値の意味を一緒に確認し、「どこを目指すか」「どんな方法が合っているか」を患者さんと話し合いながら決めていきます。押しつけはしません。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="num" aria-hidden="true">3</div>
+        <div>
+          <h4>生活習慣の改善（食事・運動）</h4>
+          <p>まずは生活習慣の見直しから。専門の栄養指導が必要な場合は、連携して対応します。「何を食べていいか分からない」というご相談も歓迎です。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="num" aria-hidden="true">4</div>
+        <div>
+          <h4>薬物療法（必要な場合）</h4>
+          <p>生活習慣の改善だけでは血糖が下がりにくい場合、飲み薬や注射（インスリン）などを使います。薬の種類・量は患者さんの状態に合わせて調整します。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="num" aria-hidden="true">5</div>
+        <div>
+          <h4>定期受診・フォローアップ</h4>
+          <p>1〜3か月に1回程度の通院で、数値の変化を確認しながら治療を続けます。「続けられる」方法を一緒に探していきます。</p>
+        </div>
+      </div>
+
+      <!-- こんな方に受診してほしい -->
+      <h2 class="lead-title" id="target">こんな方はお気軽にご相談ください</h2>
+      <ul class="check-list">
+        <li>健康診断で血糖値・HbA1cの異常を指摘された</li>
+        <li>「糖尿病の疑い」「要精密検査」と書かれていた</li>
+        <li>親や兄弟に糖尿病の方がいる（遺伝的なリスク）</li>
+        <li>急に体重が増えてきた</li>
+        <li>甘いものや炭水化物をよく食べる</li>
+        <li>運動不足が続いている</li>
+        <li>以前に糖尿病と言われ、通院が途切れてしまった</li>
+        <li>妊娠中・妊娠を考えていて血糖が気になる</li>
+      </ul>
+
+      <!-- ページ下部CTA -->
+      <div class="cta-block">
+        <p class="cta-main-text">旭川市で糖尿病・血糖値のことが気になる方へ</p>
+        <p class="cta-sub-text">まずはご相談だけでも構いません。一緒に考えましょう。</p>
+        <div class="btn-group">
+          <a href="【予約URL】" class="btn btn-accent btn-lg pulse">📅 ネットで予約する</a>
+          <a href="tel:【電話番号】" class="btn btn-primary btn-lg">📞 お電話で相談する</a>
+        </div>
+      </div>
+
+      <!-- 関連リンク -->
+      <h2 class="lead-title">関連ページ</h2>
+      <div class="card-grid">
+        <a href="lifestyle.html" class="card" style="text-decoration:none; color:inherit;">
+          <div class="card-icon">❤️</div>
+          <h3>生活習慣病（高血圧・脂質異常）</h3>
+          <p style="font-size:0.85rem;">糖尿病と関連の深い生活習慣病についても対応しています。</p>
+        </a>
+        <a href="../first-visit.html" class="card" style="text-decoration:none; color:inherit;">
+          <div class="card-icon">📝</div>
+          <h3>初診の方へ</h3>
+          <p style="font-size:0.85rem;">持ち物・受診の流れをご確認ください。</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">【クリニック名】</div>
+    <div class="footer-info">
+      〒【所在地（旭川市〇〇）】<br>
+      TEL：<a href="tel:【電話番号】" style="color:#9bc;">【電話番号】</a><br>
+      診療時間：【診療時間】
+    </div>
+    <nav class="footer-nav" aria-label="フッターナビゲーション">
+      <a href="../index.html">トップ</a>
+      <a href="../about.html">医院紹介</a>
+      <a href="../doctor.html">医師紹介</a>
+      <a href="index.html">診療内容</a>
+      <a href="../first-visit.html">初診の方へ</a>
+      <a href="../faq.html">よくある質問</a>
+      <a href="../access.html">アクセス</a>
+    </nav>
+    <p class="footer-copy">© 【クリニック名】 All Rights Reserved.</p>
+  </div>
+</footer>
+
+<div class="fixed-cta-bar" role="navigation" aria-label="予約ナビゲーション">
+  <a href="tel:【電話番号】" class="cta-tel">📞 電話で予約</a>
+  <a href="【予約URL】" class="cta-web">🗓 ネット予約</a>
+</div>
+
+<script>
+  function toggleNav() {
+    const nav     = document.getElementById('globalNav');
+    const overlay = document.getElementById('navOverlay');
+    const btn     = document.getElementById('navToggle');
+    const isOpen  = nav.classList.toggle('is-open');
+    overlay.classList.toggle('is-open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    btn.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+  }
+  function closeNav() {
+    const nav     = document.getElementById('globalNav');
+    const overlay = document.getElementById('navOverlay');
+    const btn     = document.getElementById('navToggle');
+    nav.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'メニューを開く');
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeNav();
+  });
+</script>
+
+<!--
+===========================================
+【糖尿病内科ページ】後から差し替えるべきポイント
+===========================================
+1.  血糖値・HbA1cの表の数値 → 医師が診断基準を確認の上、最新情報に更新
+2.  合併症の説明 → 誇大表現にならないよう医師が確認・承認
+3.  治療フロー③「専門の栄養指導」→ 実際に連携可能かどうかを確認
+4.  「1〜3か月に1回程度の通院」→ 実際の頻度に変更
+5.  「当日または後日ご説明」→ 実際のフローに変更
+6.  中間CTA の文章（「旭川市の糖尿病内科」）→ 開院後に自然な表現に調整
+7.  JSON-LDのドメイン名・住所情報 → 正確な情報に変更
+8.  OGP画像（ogp.jpg）→ 糖尿病をイメージしたビジュアルに変更
+===========================================
+-->
+</body>
+</html>
